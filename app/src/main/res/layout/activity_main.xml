@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/login_bk"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <NumberPicker
+        android:id="@+id/ano"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="30dp">
+
+    </NumberPicker>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="-20dp">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radioAdicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Adicionar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="388dp" />
+
+        <RadioButton
+            android:id="@+id/radioExcluir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excluir"
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="390dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="419dp">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$0,00"
+        android:textColor="#4CAF50"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="481dp" />
+
+    <Button
+        android:id="@+id/btnConfirme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:text="Confirmar"
+        android:onClick="confirmar"
+        android:layout_marginTop="25dp"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="551dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome Empresa"
+        android:layout_marginTop="20dp"
+        android:id="@+id/nomeEmpresaAdicionar">
+
+    </Button>
+
+</LinearLayout>
